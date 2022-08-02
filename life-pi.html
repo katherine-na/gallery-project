@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <title>Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+          <span class="fw-bold text-secondary">
+            <i class="bi bi-book"></i>
+            The Book Corner
+          </span>
+        </a>
+        <!--toggle button for mobile nav-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main-nav"
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--navbar links-->
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">Abouth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-secondary" href="#princing">buy now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--main image & intro text-->
+    <section id="intro">
+      <div class="container-lg">
+        <div class="row d-flex justify-content-sm-between align-items-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">Life of Pi</div>
+              <div class="display-5 text-muted">Novel by Yann Martel</div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              A science fiction adventure novel written by Canadian Yann Martel.
+              Indian man survives 227 days in a boat with a Bengal tiger after
+              his boat capsizes in the Pacific Ocean
+            </p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
+          </div>
+          <div class="col-md-5 text-center d-none d-md-block">
+            <img class="img-thumbnail my-5" src="img/life-of-pi.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--topics at a glance-->
+
+    <section id="topics">
+      <div class="container-md py-5">
+        <div class="text-center">
+          <h2>Inside the book</h2>
+          <p class="lead text-muted">Each chapter is an adventure!</p>
+        </div>
+        <div class="row my-5 g-5 justify-content-center align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="img/kindle.jpg" class="img-fluid" alt="ebook" />
+          </div>
+
+          <!--accordion-->
+          <div class="col-lg-6">
+            <div class="accordion" id="chapters">
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="true"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 1 - Pi's childhood
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Pi Patel is a young man from India whose father owns a zoo
+                      in that country. This is an atheist man of science, while
+                      his mother is a woman of Hindu faith and introduces him to
+                      religion, which arouses his spiritual curiosity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="true"
+                    aria-controls="chapter-2"
+                  >
+                    Chapter 2 - An unexpected change
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Meanwhile, a political event forces Pi's father to sell
+                      the animals to another zoo in the United States of America
+                      and move to Canada. The trip must be made by boat to
+                      transport the animals. Pi resists, but he has no choice
+                      but to leave and promise Anandi that they will be together
+                      again.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                    aria-expanded="true"
+                    aria-controls="chapter-3"
+                  >
+                    Chapter 3 - The shipwreck
+                  </button>
+                </h2>
+                <div
+                  id="chapter-3"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Pi must share the boat with his only companion: the
+                      fearsome wild beast Richard Parker, whom he must tame. The
+                      question is: who will prevail: the beast or the human
+                      being?
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="true"
+                    aria-controls="chapter-4"
+                  >
+                    Chapter 4 - The rescue
+                  </button>
+                </h2>
+                <div
+                  id="chapter-4"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Pi lives six months of drifting adventures in the company
+                      of the tiger Pi is rescued and taken to the hospital where
+                      he receives primary care. Once there, two officials from
+                      the ship's insurance agency ask the young man to relate
+                      the facts in order to file a damage and liability report.
+                      Patel relates this story, but they don't believe him.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--review-->
+    <section id="reviews" class="bg-light py-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>
+            <i class="bi bi-stars"></i>
+            Book Reviews
+          </h2>
+          <p class="lead">What the people have said about the book</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Awesome!</h5>
+                <p class="mb-1">
+                  “It is true that those we meet can change us, sometimes so
+                  profoundly that we are not the same afterwards, even unto our
+                  names.”
+                </p>
+                <small>Review by Marilyn</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Excellent</h5>
+                <p class="mb-1">
+                  “You must take life the way it comes at you and make the best
+                  of it.”
+                </p>
+                <small>Review by Liz</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                </div>
+                <h5 class="mb-1">Nice but sad</h5>
+                <p class="mb-1">
+                  “When you’ve suffered a great deal in life, each additional
+                  pain is both unbearable and trifling.”
+                </p>
+                <small>Review by Khaleb</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--pricing plans-->
+    <section id="pricing" class="bg-light mt-5 py-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  To access whenever you want!
+                </p>
+                <a href="#" class="btn btn-outline-primary brn-lg mt-3">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Second Edition</h4>
+                <p class="lead card-subtitle">eBook download & updates</p>
+                <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Access the latest updates
+                </p>
+                <a href="#" class="btn btn-outline-primary brn-lg mt-3">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate Edition</h4>
+                <p class="lead card-subtitle">download, updates & extras</p>
+                <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Complete package!
+                </p>
+                <a href="#" class="btn btn-outline-primary brn-lg mt-3">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact form-->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in Touch</h2>
+          <p class="lead">Question to Ask?</p>
+        </div>
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email address</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-envelope"></i>
+                </span>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="example@gmail.com"
+                />
+              </div>
+
+              <label for="name" class="form-label">Name</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g Kathy"
+                />
+              </div>
+              <label for="subject" class="form-label">
+                What is you question about?
+              </label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-dots"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Princing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+              <div class="form-floating mb-4 mt-5">
+                <label for="query" class="form-label">Your query...</label>
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px;"
+                ></textarea>
+              </div>
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
