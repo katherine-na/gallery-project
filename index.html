@@ -24,10 +24,12 @@
     <title>The Book Corner</title>
   </head>
   <body>
+    <!--nav-->
+
     <nav class="navbar navbar-expand-md">
-      <div class="container-xxl">
+      <div class="container-xxl my-3">
         <a href="index.html" class="navbar-brand">
-          <span class="fw-bold text-secondary">
+          <span class="fw-bold fs-3 text-secondary">
             <i class="bi bi-book"></i>
             The Book Corner
           </span>
@@ -46,7 +48,7 @@
         </button>
 
         <div
-          class="collapse navbar-collapse justify-content-end align-center"
+          class="collapse navbar-collapse justify-content-end align-center fs-5"
           id="main-nav"
         >
           <ul class="navbar-nav">
@@ -63,11 +65,40 @@
         </div>
       </div>
     </nav>
+
+    <!-- intro section-->
+
     <section id="intro">
       <div class="container-lg">
         <img class="img-thumbnail" src="images/library.jpg" />
       </div>
+      <div class="container-md my-5">
+        <div class="text-center">
+          <h2>Your happy place is here</h2>
+          <p>Find your favorite books</p>
+        </div>
+      </div>
+      <div class="container-lg my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <form>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-search"></i>
+                </span>
+                <input
+                  type="search"
+                  class="form-control"
+                  placeholder="search"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!--news section-->
 
     <section id="news" class="bg-light mt-5 py-5">
       <div class="container-lg">
