@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <!--bootstrap-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <title>Bootstrap</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,10 +20,9 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <title>The Book Corner</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-xxl">
         <a href="#intro" class="navbar-brand">
           <span class="fw-bold text-secondary">
@@ -45,158 +43,348 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
+        <!--navbar links-->
         <div
           class="collapse navbar-collapse justify-content-end align-center"
           id="main-nav"
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#news">News</a>
+              <a class="nav-link" href="#topics">Abouth</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ebook">eBook</a>
+              <a class="nav-link" href="#reviews">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#get-in-touch">Get in Touch</a>
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+            <li class="nav-item d-md-none">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item ms-2 d-none d-md-inline">
+              <a class="btn btn-secondary" href="#princing">buy now</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section id="intro">
-      <div class="container-lg">
-        <img class="img-thumbnail" src="images/library.jpg" />
-      </div>
-    </section>
 
-    <section id="news" class="bg-light mt-5 py-5">
-      <div class="container-lg">
-        <div class="text-center">
-          <h2>News</h2>
-          <p class="lead text-muted">Get to know the most relevant releases</p>
-        </div>
-        <div class="row my-5 align-items-center justify-content-center">
-          <div class="col-8 col-lg-4 col-xl-4">
-            <div class="card border-0">
-              <div class="card-body text-center">
-                <h4 class="card-title">Life of Pi</h4>
-                <p class="lead card-subtitle py-3">
-                  A science fiction adventure novel written by Canadian Yann
-                  Martel
-                </p>
-                <img
-                  class="img-fluid my-4"
-                  style="width: 240px;"
-                  src="images/life-of-pi.jpg"
-                />
-                <div>
-                  <a
-                    href="pi-book.html"
-                    class="btn btn-outline-secondary bn-lg mt-3"
-                  >
-                    See more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-8 col-lg-4 col-xl-4">
-            <div class="card border-0">
-              <div class="card-body text-center">
-                <h4 class="card-title">The Little Prince</h4>
-                <p class="lead card-subtitle py-3">
-                  A young prince who visits various planets in space, including
-                  Earth
-                </p>
-                <img
-                  class="img-fluid my-4"
-                  style="width: 250px;"
-                  src="images/principito.jpg"
-                />
-                <div>
-                  <a
-                    href="principito-book.html"
-                    class="btn btn-outline-secondary bn-lg mt-3"
-                  >
-                    See more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-8 col-lg-4 col-xl-4">
-            <div class="card border-0">
-              <div class="card-body text-center">
-                <h4 class="card-title">Alice in Wonderland</h4>
-                <p class="lead card-subtitle py-3">
-                  Alice in Wonderland crosses the threshold that separates
-                  reality from dreams
-                </p>
-                <img
-                  class="img-fluid my-4"
-                  style="width: 250px;"
-                  src="images/wonderland.png"
-                />
-                <div>
-                  <a
-                    href="alices-book.html"
-                    class="btn btn-outline-secondary bn-lg mt-3"
-                  >
-                    See more
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="ebook" class="bg-light mt-5 py-5">
+    <!--main image & intro text-->
+    <section id="intro">
       <div class="container-lg">
         <div class="row d-flex justify-content-sm-between align-items-center">
           <div class="col-md-5 text-center text-md-start">
-            <h2>eBook</h2>
-            <p class="lead text-muted">
-              #1 source for free eBook downloads, eBook resources & eBook
-              authors. Read & download eBooks for Free: anytime!
+            <h1>
+              <div class="display-2">The Little Prince</div>
+              <div class="display-5 text-muted">
+                Novella by Antoine de Saint-Exupéry
+              </div>
+            </h1>
+            <p class="lead my-4 text-muted">
+              The story follows a young prince who visits various planets in
+              space, including Earth, and addresses themes of loneliness,
+              friendship, love, and loss.
             </p>
+            <a href="#pricing" class="btn btn-secondary btn-lg">Buy now</a>
           </div>
-
           <div class="col-md-5 text-center d-none d-md-block">
             <img
-              class="img-fluid"
-              style="height: 300px;"
-              style="width: 500px;"
-              src="images/ebook.png"
+              class="img-thumbnail my-5"
+              src="images/principito.jpg"
+              alt=""
             />
           </div>
         </div>
       </div>
     </section>
-    <section id="get-in-touch">
+
+    <!--topics at a glance-->
+
+    <section id="topics">
+      <div class="container-md py-5">
+        <div class="text-center">
+          <h2>Inside the book</h2>
+          <p class="lead text-muted">Each chapter is an adventure!</p>
+        </div>
+        <div class="row my-5 g-5 justify-content-center align-items-center">
+          <div class="col-6 col-lg-4">
+            <img src="images/kindle.jpg" class="img-fluid" alt="ebook" />
+          </div>
+
+          <!--accordion-->
+          <div class="col-lg-6">
+            <div class="accordion" id="chapters">
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-1">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-1"
+                    aria-expanded="true"
+                    aria-controls="chapter-1"
+                  >
+                    Chapter 1 - We are introduced to the narrator, a pilot, and
+                    his ideas about grown-ups
+                  </button>
+                </h2>
+                <div
+                  id="chapter-1"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-1"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Once when I was six years old I saw a magnificent picture
+                      in a book, called True Stories from Nature, about the
+                      primeval forest...
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-2">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-2"
+                    aria-expanded="true"
+                    aria-controls="chapter-2"
+                  >
+                    Chapter 2 - The narrator crashes in the desert and makes the
+                    acquaintance of the little prince .
+                  </button>
+                </h2>
+                <div
+                  id="chapter-2"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-2"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      So I lived my life alone, without anyone that I could
+                      really talk to, until I had an accident with my plane in
+                      the Desert of Sahara, six years ago. Something was broken
+                      in my engine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-3">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-3"
+                    aria-expanded="true"
+                    aria-controls="chapter-3"
+                  >
+                    Chapter 3 - The narrator learns more about from where the
+                    little prince came
+                  </button>
+                </h2>
+                <div
+                  id="chapter-3"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-3"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      It took me a long time to learn where he came from. The
+                      little prince, who asked me so many questions, never
+                      seemed to hear the ones I asked him.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion item">
+                <h2 class="accordion-header" id="heading-4">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#chapter-4"
+                    aria-expanded="true"
+                    aria-controls="chapter-4"
+                  >
+                    Chapter 4 - The narrator speculates as to which asteroid
+                    from which the little prince came
+                  </button>
+                </h2>
+                <div
+                  id="chapter-4"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="heading-4"
+                  data-bs-parent="#chapters"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      I had thus learned a second fact of great importance: this
+                      was that the planet the little prince came from was
+                      scarcely any larger than a house!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--review-->
+    <section id="reviews" class="bg-light py-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>
+            <i class="bi bi-stars"></i>
+            Book Reviews
+          </h2>
+          <p class="lead">What the people have said about the book</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">The best book</h5>
+                <p class="mb-1">
+                  “If somebody entitles this book as children literature, I
+                  don't agree because ideas and concepts which are demonstrated
+                  even sometimes become harder to consume for adults.”
+                </p>
+                <small>Review by Pau</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">Beautifully</h5>
+                <p class="mb-1">
+                  “I don't really have words to describe how beautifully the
+                  author has narrated the book in the most simple and concise
+                  manner possible.”
+                </p>
+                <small>Review by Layla</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="list-group">
+              <div class="list-group-item py-3">
+                <div class="pb-2">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <h5 class="mb-1">My favorite always</h5>
+                <p class="mb-1">
+                  “The Little Prince is by far my favorite book! That phrase 'It
+                  is only with the heart that one can see rightly' is fabulous
+                  and memorable. ”
+                </p>
+                <small>Review by Khaleb</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--pricing plans-->
+    <section id="pricing" class="bg-light mt-5 py-5">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Pricing plans</h2>
+          <p class="lead text-muted">Choose a pricing plan to suit you.</p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Starter Edition</h4>
+                <p class="lead card-subtitle">eBook download only</p>
+                <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  To access whenever you want!
+                </p>
+                <a href="#" class="btn btn-outline-primary brn-lg mt-3">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 col-lg-4">
+            <div class="card border-primary border-2">
+              <div class="card-header text-center text-primary">
+                Most popular
+              </div>
+              <div class="card-body text-center py-5">
+                <h4 class="card-title">Second Edition</h4>
+                <p class="lead card-subtitle">eBook download & updates</p>
+                <p class="display-5 my-4 text-primary fw-bold">$18.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Access the latest updates
+                </p>
+                <a href="#" class="btn btn-outline-primary brn-lg mt-3">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 col-lg-4 col-xl-3">
+            <div class="card border-0">
+              <div class="card-body text-center py-4">
+                <h4 class="card-title">Ultimate Edition</h4>
+                <p class="lead card-subtitle">download, updates & extras</p>
+                <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                <p class="card-text mx-5 text-muted d-none d-lg-block">
+                  Complete package!
+                </p>
+                <a href="#" class="btn btn-outline-primary brn-lg mt-3">
+                  Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact form-->
+    <section id="contact">
       <div class="container-lg my-5">
         <div class="text-center">
           <h2>Get in Touch</h2>
+          <p class="lead">Question to Ask?</p>
         </div>
-        <div class="row justify-content-center my-1">
-          <div class="col-lg-6">
-            <form>
-              <label for="name" class="form-label">Name</label>
-              <div class="mb-4 input-group">
-                <span class="input-group-text">
-                  <i class="bi bi-person-fill"></i>
-                </span>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="my name"
-                />
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="row justify-content-center my-1">
+        <div class="row justify-content-center my-5">
           <div class="col-lg-6">
             <form>
               <label for="email" class="form-label">Email address</label>
@@ -211,11 +399,45 @@
                   placeholder="example@gmail.com"
                 />
               </div>
+
+              <label for="name" class="form-label">Name</label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i>
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="e.g Kathy"
+                />
+              </div>
+              <label for="subject" class="form-label">
+                What is you question about?
+              </label>
+              <div class="mb-4 input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-chat-dots"></i>
+                </span>
+                <select class="form-select" id="subject">
+                  <option value="pricing" selected>Princing query</option>
+                  <option value="content">Content query</option>
+                  <option value="other">Other query</option>
+                </select>
+              </div>
+              <div class="form-floating mb-4 mt-5">
+                <label for="query" class="form-label">Your query...</label>
+                <textarea
+                  id="query"
+                  class="form-control"
+                  style="height: 140px;"
+                ></textarea>
+              </div>
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
             </form>
           </div>
-        </div>
-        <div class="mb-4 text-center">
-          <button type="submit" class="btn btn-secondary">Submit</button>
         </div>
       </div>
     </section>
